@@ -1,20 +1,21 @@
-body{
+body {
     background-color: rgb(182, 223, 240);
-
 }
-.country-card-wrapper{
+
+.country-card-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin: 10px 0px;
     padding: 10px 8px;
-    
-    
+
+
 }
-.filters{
+
+.filters {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    
+
 }

@@ -46,11 +46,6 @@ function CountryDetail(props) {
           </Box>
           <div
             className="country-detail-wrapper"
-            style={{
-              backgroundImage: `url(${detail.flags?.png})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
           >
             <div>
               <img
