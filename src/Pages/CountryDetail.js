@@ -44,7 +44,14 @@ function CountryDetail(props) {
               </Toolbar>
             </AppBar>
           </Box>
-          <div className="country-detail-wrapper">
+          <div
+            className="country-detail-wrapper"
+            style={{
+              backgroundImage: `url(${detail.flags?.png})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <div>
               <img
                 className="image"

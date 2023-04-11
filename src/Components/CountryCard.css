@@ -2,7 +2,9 @@
 .card{
     transition: transform 0.5s ease-in-out;
     margin: 10px 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0);
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    border: 2px solid gold;
+    border-radius: 4px;
 
 }
 .card:hover{

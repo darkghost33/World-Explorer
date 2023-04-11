@@ -4,14 +4,13 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-
 }
 
 .image {
     border: 2px solid rgb(90, 189, 255);
     border-radius: 20px;
     box-shadow: 0 4px 6px rgb(0, 0, 0, 0.6);
-    height: 36vh;
+
 }
 
 .rest-detail {
@@ -24,6 +23,7 @@
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgb(0, 0, 0, 0.6);
+    overflow: hidden;
 }
 
 .main-heading {
