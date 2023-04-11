@@ -8,8 +8,7 @@ export default function CircularColor(props) {
       <div>
         <CircularProgress size={70} color="secondary" />
       </div>
-
-      <h2>Loading countries ....</h2>
+      <h2>{`${props.data}`}</h2>
     </div>
   );
 }

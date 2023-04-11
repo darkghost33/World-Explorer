@@ -1,6 +1,4 @@
-body{
-    background-color: rgb(255, 240, 240);
-}
+
 .progress-bar{
     display: flex;
     flex-direction: column;

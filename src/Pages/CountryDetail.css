@@ -1,20 +1,31 @@
 .country-detail-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 35vh;
+    margin-top: 50px;
+
 }
 
 .image {
-    margin: 0 100px;
-    border: 2px solid red;
-
+    border: 2px solid rgb(90, 189, 255);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.6);
+    height: 36vh;
 }
 
 .rest-detail {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 2px solid red;
+    justify-content: space-evenly;
+    border: 2px solid rgb(90, 189, 255);
+    background-color: rgb(145, 253, 255);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.6);
+}
 
+.main-heading {
+    text-align: center;
 }

@@ -1,12 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CountryDetail from "./Pages/CountryDetail";
 import Home from "./Pages/Home";
-
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
+        <Route path="/" element={<><Home/></>}></Route>
         <Route
           path="*"
           element={
@@ -17,7 +16,7 @@ function App() {
         ></Route>
         <Route
           path="/countries/:countryCode"
-          element={<CountryDetail></CountryDetail>}
+          element={<><CountryDetail></CountryDetail></>}
         ></Route>
       </Routes>
     </BrowserRouter>
