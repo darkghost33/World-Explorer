@@ -9,16 +9,20 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import ProgressBar from './ProgressBar'
 
 function Home() {
   const [allCountriesList, setallCountriesList] = useState([]);
   const [filterCountries, setFilterCountries] = useState([]);
   const [region, setRegion] = useState("");
   const [countryName, setCountryName] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+
 
   useEffect(() => {
     getAllCountries().then((result) => {
       const countries = result.data;
+      setIsLoading(false);
       setallCountriesList(countries);
       setFilterCountries(countries);
       //   console.log(countries);
@@ -59,6 +63,7 @@ function Home() {
 
   return (
     <>
+    {isLoading ? (<ProgressBar></ProgressBar>):(
       <div className="App">
         <div className="filters">
           <TextField
@@ -104,7 +109,7 @@ function Home() {
             </Link>
           ))}
         </div>
-      </div>
+      </div>)}
     </>
   );
 }
